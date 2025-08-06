@@ -12,6 +12,19 @@ body {
     flex-direction: column;
     justify-content: flex-end;
 }
+/* Carrusel */
+
+#carouselExampleFade {
+    height: 400px; /* Ajusta este valor según necesites */
+    overflow: hidden;
+}
+
+#carouselExampleFade .carousel-item img {
+    height: 400px;
+    object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+}
+
+/* footer */
 
 .footer {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
