@@ -12,28 +12,35 @@ body {
     flex-direction: column;
     justify-content: flex-end;
 }
+
+/* Header */
+
 .navHeader {
-    background-color: #903a6b !important;
-    --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
+    background-color: #fdf2f8 !important;
+    --bs-bg-opacity: 1 !important;
 }
+
+.dropDown{
+    background-color: #efcade !important;
+}
+
 /* Carrusel */
 
 #carouselExampleFade {
-    height: 400px; /* Ajusta este valor según necesites */
+    height: 400px;
     overflow: hidden;
 }
 
 #carouselExampleFade .carousel-item img {
     height: 400px;
-    object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+    object-fit: cover; /* Mantiene la proporción para la imagen */
 }
 
 /* footer */
 
 .footer {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: #fdf2f8;
+    color: #374151;
     padding: 40px 0 20px 0;
     position: relative;
     overflow: hidden;
@@ -66,7 +73,7 @@ body {
 .footer-info h3 {
     font-size: 1.8rem;
     margin-bottom: 10px;
-    background: linear-gradient(45deg, #FFD700, #FFA500);
+    background: #374151;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -92,8 +99,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    background: #efcade;
     color: white;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -135,7 +141,7 @@ body {
 
 .copyright .year {
     font-weight: bold;
-    color: #FFD700;
+    color: #374151;
 }
 
 @media (max-width: 768px) {
@@ -158,55 +164,4 @@ body {
         width: 45px;
         height: 45px;
     }
-}
-
-/* Efecto de velas flotantes */
-.candle-effect {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    width: 6px;
-    height: 6px;
-    background: #FFD700;
-    border-radius: 50%;
-    animation: flicker 2s ease-in-out infinite alternate;
-    box-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
-}
-
-.candle-effect:nth-child(2) {
-    left: 30px;
-    animation-delay: 0.5s;
-}
-
-.candle-effect:nth-child(3) {
-    right: 100px;
-    animation-delay: 1s;
-}
-
-@keyframes flicker {
-    0% {
-        opacity: 1;
-        transform: scale(1);
-    }
-    100% {
-        opacity: 0.8;
-        transform: scale(0.96);
-    }
-}
-
-/* Contenido de ejemplo para mostrar el footer */
-.main-content {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 40px;
-}
-
-.preview-text {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
