@@ -12,6 +12,11 @@ body {
     flex-direction: column;
     justify-content: flex-end;
 }
+.navHeader {
+    background-color: #903a6b !important;
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
+}
 /* Carrusel */
 
 #carouselExampleFade {
