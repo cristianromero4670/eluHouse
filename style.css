@@ -20,6 +20,21 @@ body {
     --bs-bg-opacity: 1 !important;
 }
 
+.container-links { /* Carrito de compras y menu */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-toggler {
+    width: 48px; /* tamano de los iconos */
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 .dropDown{
     background-color: #efcade !important;
 }
