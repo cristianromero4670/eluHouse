@@ -11,10 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <script src="Houses.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
-  <body>
+  <body class="bg-parallax">
 
     <!-- Header -->
     <nav class="navbar navHeader">
@@ -61,10 +61,8 @@
       </div>
     </nav>
 
-    <!-- Carrusel: Añadir links de compra para tienda.html -->
+    <!-- Carrusel con efecto hover -->
 
-    <!-- Carrusel con efecto hover -->
-    <!-- Carrusel con efecto hover -->
     <div id="carouselExample" class="carousel slide image-carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -87,32 +85,34 @@
       </button>
     </div>
 
-
-
     <!-- Carta de velas aromaticas -->
 
-    <div class="card mb-3" style="max-width: 540px;">
+    <div class="card mb-3 custom-card">
       <div class="row g-0">
         <div class="col-md-4">
-          <img src="aromatica.jpg" class="img-fluid rounded-start" alt="...">
+          <img src="aromatica.jpg" class="card-img" alt="...">
         </div>
         <div class="col-md-8">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural lead-in to additional content. 
+              This content is a little bit longer.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </p>
           </div>
         </div>
       </div>
     </div>
+    
+        
 
     <!-- Carta de vela decorativa -->
 
-    <div class="card mb-3" style="max-width: 540px;">
+    <div class="card mb-3 custom-card">
       <div class="row g-0">
-        <div class="col-md-4">
-          <img src="decorativa.jpg" class="img-fluid rounded-start" alt="...">
-        </div>
         <div class="col-md-8">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
@@ -120,15 +120,18 @@
             <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
           </div>
         </div>
+        <div class="col-md-4">
+          <img src="decorativa.jpg" class="card-img" alt="...">
+        </div>
       </div>
-    </div>
+    </div>    
 
     <!-- Carta de sets y combos -->
 
-    <div class="card mb-3" style="max-width: 540px;">
+    <div class="card mb-3 custom-card">
       <div class="row g-0">
         <div class="col-md-4">
-          <img src="sets.jpg" class="img-fluid rounded-start" alt="...">
+          <img src="sets.jpg" class="card-img" alt="...">
         </div>
         <div class="col-md-8">
           <div class="card-body">
@@ -139,6 +142,7 @@
         </div>
       </div>
     </div>
+    
 
     <!-- Link para cursos --> <!-- agregar estilo y bordes a la tarjeta -->
 
