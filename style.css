@@ -1,3 +1,14 @@
+/* === ESTILOS PERSONALIZADOS ELUHOUSES === */
+/* Paleta de colores inspirada en el logo */
+:root {
+    --eluhouses-primary: #8B4A6B;     /* Burgundy del logo */
+    --eluhouses-secondary: #C4A1B0;   /* Rosa medio */
+    --eluhouses-light: #E8D5DD;       /* Rosa claro */
+    --eluhouses-accent: #D4A5B8;      /* Rosa suave */
+    --eluhouses-cream: #FDF8FA;       /* Crema rosado */
+    --eluhouses-shadow: rgba(139, 74, 107, 0.2); /* Sombra suave */
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -57,6 +68,36 @@ body {
     height: 400px;
     object-fit: cover; /* Mantiene la proporción para la imagen */
 }
+
+/* practica */
+/* Estilo general del carrusel */
+.image-carousel {
+    width: 95%;              /* ocupa el 90% del ancho de pantalla */
+    margin: 40px auto;       /* centrado horizontal con margen superior/inferior */
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Imágenes dentro del carrusel */
+  .carousel-img {
+    width: 100%;             /* ocupa el ancho del carrusel */
+    height: 60vh;            /* 60% de la altura de la pantalla */
+    object-fit: cover;       /* recorta proporcionalmente sin deformar */
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover sobre el carrusel */
+  .image-carousel:hover {
+    border: 3px solid #FDF8FA; /* borde elegante */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transform: scale(1.02);   /* ligero zoom */
+  }
+  
+  
+
+/* finaliza */
 
 /* footer */
 
