@@ -20,6 +20,13 @@ body {
     --bs-bg-opacity: 1 !important;
 }
 
+/* Fuente */
+.navbar-font {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
 .container-links { /* Carrito de compras y menu */
     display: flex;
     flex-direction: row;
