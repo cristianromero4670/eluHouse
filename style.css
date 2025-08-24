@@ -69,35 +69,30 @@ body {
     object-fit: cover; /* Mantiene la proporción para la imagen */
 }
 
-/* practica */
-/* Estilo general del carrusel */
+/* efecto hover y border */
 .image-carousel {
-    width: 95%;              /* ocupa el 90% del ancho de pantalla */
-    margin: 40px auto;       /* centrado horizontal con margen superior/inferior */
+    width: 95%;
+    margin: 40px auto;
     border-radius: 12px;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
-  }
-  
-  /* Imágenes dentro del carrusel */
-  .carousel-img {
-    width: 100%;             /* ocupa el ancho del carrusel */
-    height: 60vh;            /* 60% de la altura de la pantalla */
-    object-fit: cover;       /* recorta proporcionalmente sin deformar */
+}  
+
+/* Imagen dentro del carrusel */
+.carousel-img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
     border-radius: 12px;
     transition: all 0.3s ease-in-out;
-  }
-  
-  /* Hover sobre el carrusel */
-  .image-carousel:hover {
-    border: 3px solid #FDF8FA; /* borde elegante */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-    transform: scale(1.02);   /* ligero zoom */
-  }
-  
-  
+}
 
-/* finaliza */
+.image-carousel:hover {
+    border: 3px solid #FDF8FA;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transform: scale(1.02); /* zoom */
+}
+
 
 /* footer */
 
