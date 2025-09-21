@@ -103,9 +103,27 @@ body {
 }
 
 /* Cartas de velas */
+
+.parent {
+display: grid;
+grid-template-columns: .3fr repeat(2, 1fr) .5fr repeat(2, 1fr) .5fr repeat(2, 1fr) .5fr repeat(2, 1fr) .3fr;
+grid-template-rows: repeat(3, 1fr) repeat(2, .5fr) repeat(2, 1fr) .5fr repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 1 / 6 / 12; 
+    background-color: #000000;
+}
+
+.div1 { grid-area: 1 / 1 / 8 / 14; }
+.div2 { grid-area: 2 / 5 / 5 / 10; }
+.div3 { grid-area: 6 / 2 / 9 / 7; }
+.div4 { grid-area: 6 / 8 / 9 / 13; }
+
 .card.custom-card {
-    height: 250px;
-    width: 95%;
+    height: 100%;
+    width: 100%;
     margin: 40px auto;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
