@@ -25,7 +25,8 @@ body {
 /* Background-image */
 
 .bg-parallax {
-    background-image: url("Background.png");
+    background-color: #fdf2f8;
+    linear-gradient(135deg, #fdf2f8 0%, #f8e1e7 100%);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -105,16 +106,16 @@ body {
 /* Cartas de velas */
 
 .parent {
-display: grid;
-grid-template-columns: .3fr repeat(2, 1fr) .5fr repeat(2, 1fr) .5fr repeat(2, 1fr) .5fr repeat(2, 1fr) .3fr;
-grid-template-rows: repeat(3, 1fr) repeat(2, .5fr) repeat(2, 1fr) .5fr repeat(5, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+    display: grid;
+    grid-template-columns: .3fr repeat(2, 1fr) .5fr repeat(2, 1fr) .5fr repeat(2, 1fr) .5fr repeat(2, 1fr) .3fr;
+    grid-template-rows: repeat(3, 1fr) repeat(2, .5fr) repeat(2, 1fr) .5fr repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
 
 .div1 { grid-area: 1 / 1 / 6 / 12; 
-    background-color: #000000;
-}
+    background-image: url("background-destacados.jpg");
+    background-size: cover;}
 
 .div1 { grid-area: 1 / 1 / 8 / 14; }
 .div2 { grid-area: 2 / 5 / 5 / 10; }
