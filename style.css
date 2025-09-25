@@ -123,6 +123,7 @@ body {
 
 .card.custom-card { 
     transition: all 0.3s ease-in-out; 
+    background-color: rgb(230, 230, 205);
 }
 
 .card.custom-card .col-md-4 {
@@ -149,9 +150,20 @@ body {
     transform: scale(1.02); /* ligero zoom de toda la card */
 }
 
+.card-title{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    display: grid;
+    place-items: center;
+}
+
 .card-text {
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
+    margin-right: 2%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* Link de cursos */
