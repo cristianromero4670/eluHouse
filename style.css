@@ -123,7 +123,8 @@ body {
 
 .card.custom-card { 
     transition: all 0.3s ease-in-out; 
-    background-color: rgb(230, 230, 205);
+    background-image: url(background\ lino.jpg);
+    background-size: cover;
 }
 
 .card.custom-card .col-md-4 {
@@ -159,11 +160,12 @@ body {
 
 .card-text {
     font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    margin-right: 2%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    position: center;
+    margin-right: 20px;
+}
+
+.card-button {
+    position: center;
 }
 
 /* Link de cursos */
