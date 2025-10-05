@@ -5,6 +5,13 @@
     --eluhouses-cream: #FDF8FA;       /* Crema rosado */
   }
 
+@font-face {
+    font-family: 'cameliya';
+    src: url(fonts/Cameliya\ Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -38,7 +45,7 @@ body {
 
 /* Fuente */
 .navbar-font {
-    font-family: "Nunito", sans-serif;
+    font-family: 'cameliya', serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
@@ -108,7 +115,7 @@ body {
 
 .contenedor-card { 
     grid-area: 1 / 1 / 8 / 14; 
-    background-image: url("background-destacados.jpg");
+    background-image: url("recursos/background-destacados.jpg");
     background-size: cover;
 }
 
@@ -118,7 +125,7 @@ body {
 
 .card.custom-card { 
     transition: all 0.3s ease-in-out; 
-    background-image: url("background lino.jpg");
+    background-image: url("recursos/background lino.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 0.5rem;
@@ -157,7 +164,12 @@ body {
     padding: 20px;
 }
 
-.card-title,
+.card-title{
+    font-family: "cameliya", serif;
+    margin: 10px 0;
+}
+
+
 .card-text,
 .card-button {
     font-family: "Nunito", sans-serif;
@@ -171,7 +183,7 @@ body {
     border: 2px solid var(--eluhouses-secondary); 
     border-radius: 8px;
     background: var(--eluhouses-secondary); 
-    background-image: linear-gradient(145deg, #fdfaf7, var(--eluhouses-accent));    
+    background: linear-gradient(145deg, #fdfaf7, var(--eluhouses-accent));    
     color: #4a3f35;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -207,6 +219,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'cameliya', serif;
 }
 
 /* footer */
